@@ -15,9 +15,12 @@
     "test-all": "npm run check-format && npm run check-lint && npm run check-types"
   },
   "dependencies": {
+    "@fullcalendar/core": "^5.11.3",
     "@fullcalendar/daygrid": "^5.11.3",
+    "@fullcalendar/interaction": "^5.11.3",
     "@fullcalendar/react": "^5.11.2",
     "next": "13.0.2",
+    "next-transpile-modules": "^10.0.0",
     "react": "18.2.0",
     "react-dom": "18.2.0"
   },
