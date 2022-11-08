@@ -9,9 +9,9 @@ import jaLocale from '@fullcalendar/core/locales/ja';
 import interactionPlugin from '@fullcalendar/interaction';
 import { createEventId, INITIAL_EVENTS } from '../utils/event-utils';
 import { useCallback, useState } from 'react';
+import Footer from './Footer';
 
 const Calender = (): JSX.Element => {
-  // eslint-disable-next-line @typescript-eslint/no-unused-vars
   const [currentEvents, setCurrentEvents] = useState<EventApi[]>([]);
 
   // 貯金データの初期表示
@@ -70,7 +70,7 @@ const Calender = (): JSX.Element => {
         eventClick={handleEventClick}
         eventContent={renderEventContent}
       />
-      <button>表示</button>
+      <Footer currentEvents={currentEvents}></Footer>
     </>
   );
 };

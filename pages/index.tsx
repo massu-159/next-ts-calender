@@ -2,7 +2,6 @@ import type { NextPage } from 'next';
 import Head from 'next/head';
 import styles from '../styles/Home.module.css';
 import Calender from '../components/Calender';
-import Footer from '../components/Footer';
 
 const Home: NextPage = () => {
   return (
@@ -16,7 +15,6 @@ const Home: NextPage = () => {
         <link rel='icon' href='/favicon.ico' />
       </Head>
       <Calender></Calender>
-      <Footer></Footer>
     </div>
   );
 };
