@@ -13,7 +13,7 @@ module.exports = {
   plugins: ['react'],
   rules: {
     'react/react-in-jsx-scope': 'off',
-    '@typescript-eslint/no-non-null-assertion': 'warn',
+    '@typescript-eslint/no-non-null-assertion': 'off',
   },
   settings: {
     react: {

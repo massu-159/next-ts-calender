@@ -1,7 +1,11 @@
 import { EventApi, formatDate } from '@fullcalendar/react';
 import React from 'react';
 
-const Footer = ({ currentEvents }: any): JSX.Element => {
+const Footer = ({
+  currentEvents,
+}: {
+  currentEvents: EventApi[];
+}): JSX.Element => {
   return (
     <div>
       <h2>貯金回数：{currentEvents.length}</h2>
