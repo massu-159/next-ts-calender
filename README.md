@@ -1,34 +1,65 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# next-ts-calender
+アウトプットとして、Next.jsを使った貯金カレンダーアプリケーションを作成。
 
-## Getting Started
+TypeScriptによる型定義。
 
-First, run the development server:
+カレンダーに貯金額を入力できて、貯金額を管理。
 
-```bash
+<img src="https://user-images.githubusercontent.com/75517054/200572334-6d82d6f1-93c8-4f29-9c06-6d69d635804b.png" alt="デモ" width="450"/>
+
+url：
+https://github.com/massu-159/next-ts-calender
+
+FullCalenderライブラリを使用。docは[こちら](https://fullcalendar.io/)
+
+参考：
+https://qiita.com/FumioNonaka/items/936ca66c78361a02bbd4
+
+## 目次
+1. 環境構築
+2. アプリケーションの仕様
+
+## 1. 環境構築
+
+### 1-1. ライブラリ インストール
+
+```
+npm install
+
+または
+
+yarn
+```
+
+### 1-2. アプリケーション実行
+
+```
 npm run dev
-# or
+
+または
+
 yarn dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## 2. アプリケーションの仕様
 
-You can start editing the page by modifying `pages/index.tsx`. The page auto-updates as you edit the file.
-
-[API routes](https://nextjs.org/docs/api-routes/introduction) can be accessed on [http://localhost:3000/api/hello](http://localhost:3000/api/hello). This endpoint can be edited in `pages/api/hello.ts`.
-
-The `pages/api` directory is mapped to `/api/*`. Files in this directory are treated as [API routes](https://nextjs.org/docs/api-routes/introduction) instead of React pages.
-
-## Learn More
-
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+### 2-1. 仕様
+- 貯金
+  - 貯金額一覧表示
+  - 貯金額登録処理
+  - 貯金額削除処理
+  - 合計額表示
+- カレンダー
+  - カレンダー1ヶ月表示
+  - ドラッグ&ドロップで貯金した日を変更
+  
+### 2-2. 構成技術
+- next : 13.0.2
+- react : 18.2.0
+- react-dom : 18.2.0
+- @fullcalendar/core : 5.11.3
+- @fullcalendar/daygrid : 5.11.3
+- @fullcalendar/interaction : 5.11.3
+- @fullcalendar/react : 5.11.2
+- next-transpile-modules : 10.0.0
+- typescript : *
