@@ -1,33 +1,35 @@
-import { EventApi, formatDate } from '@fullcalendar/react';
+import { formatDate } from '@fullcalendar/react';
+import { DocumentData } from 'firebase/firestore';
 import React from 'react';
+import { SavingsApi } from '../interfaces/SavingsApi';
 
 const Footer = ({
-  currentEvents,
+  savings,
 }: {
-  currentEvents: EventApi[];
+  savings: SavingsApi[] | DocumentData;
 }): JSX.Element => {
   return (
     <div>
-      <h2>貯金回数：{currentEvents.length}</h2>
+      <h2>貯金回数：{savings.length}</h2>
       <h2>
         合計：¥
-        {currentEvents
-          .map((event: EventApi) => Number(event.title))
+        {savings
+          .map((saving: SavingsApi) => Number(saving.title))
           .reduce((sum: number, element: number) => sum + element, 0)}
         円
       </h2>
       <ul>
-        {currentEvents.map((event: EventApi) => (
-          <li key={event.id}>
+        {savings.map((saving: SavingsApi) => (
+          <li key={saving.id}>
             <b>
-              {formatDate(event.start!, {
+              {formatDate(saving.start, {
                 year: 'numeric',
                 month: 'short',
                 day: 'numeric',
                 locale: 'ja',
               })}
             </b>
-            <i> ¥{event.title}円</i>
+            <i> ¥{saving.title}円</i>
           </li>
         ))}
       </ul>
