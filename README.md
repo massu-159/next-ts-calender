@@ -67,3 +67,5 @@ yarn dev
 - @fullcalendar/react : 5.11.2
 - next-transpile-modules : 10.0.0
 - typescript : \*
+- firebase : 9.13.0
+- uuid : 9.0.0
