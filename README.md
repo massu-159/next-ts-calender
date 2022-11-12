@@ -1,7 +1,8 @@
 # next-ts-calender
-アウトプットとして、Next.jsを使った貯金カレンダーアプリケーションを作成。
 
-TypeScriptによる型定義。
+アウトプットとして、Next.js を使った貯金カレンダーアプリケーションを作成。
+
+TypeScript による型定義。
 
 カレンダーに貯金額を入力できて、貯金額を管理。
 
@@ -10,12 +11,13 @@ TypeScriptによる型定義。
 url：
 https://github.com/massu-159/next-ts-calender
 
-FullCalenderライブラリを使用。docは[こちら](https://fullcalendar.io/)
+FullCalender ライブラリを使用。doc は[こちら](https://fullcalendar.io/)
 
 参考：
 https://qiita.com/FumioNonaka/items/936ca66c78361a02bbd4
 
 ## 目次
+
 1. 環境構築
 2. アプリケーションの仕様
 
@@ -44,16 +46,18 @@ yarn dev
 ## 2. アプリケーションの仕様
 
 ### 2-1. 仕様
+
 - 貯金
   - 貯金額一覧表示
   - 貯金額登録処理
   - 貯金額削除処理
   - 合計額表示
 - カレンダー
-  - カレンダー1ヶ月表示
+  - カレンダー 1 ヶ月表示
   - ドラッグ&ドロップで貯金した日を変更
-  
+
 ### 2-2. 構成技術
+
 - next : 13.0.2
 - react : 18.2.0
 - react-dom : 18.2.0
@@ -62,4 +66,4 @@ yarn dev
 - @fullcalendar/interaction : 5.11.3
 - @fullcalendar/react : 5.11.2
 - next-transpile-modules : 10.0.0
-- typescript : *
+- typescript : \*
