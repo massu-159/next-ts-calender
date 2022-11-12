@@ -43,6 +43,17 @@ npm run dev
 yarn dev
 ```
 
+### 1-3. 環境変数の設定
+ルートディレクトリに、`.env`ファイルを作成し、環境変数を設定。
+```
+NEXT_PUBLIC_FIREBASE_API_KEY=xxxxxxxxxxxxxxx
+NEXT_PUBLIC_FIREBASE_AUTH_DOMAIN=xxxxxxxxxxxxxxx
+NEXT_PUBLIC_FIREBASE_PROJECT_ID=xxxxxxxxxxxxxxx
+NEXT_PUBLIC_FIREBASE_STORAGE_BUCKET=xxxxxxxxxxxxxxx
+NEXT_PUBLIC_FIREBASE_MESSAGING_SEND_ID=xxxxxxxxxxxxxxx
+NEXT_PUBLIC_FIREBASE_APP_ID=xxxxxxxxxxxxxxx
+```
+
 ## 2. アプリケーションの仕様
 
 ### 2-1. 仕様
